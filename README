@@ -3,3 +3,49 @@ You get an array of numbers, return the sum of all of the positives ones.
 Example [1,-4,7,12] => 1 + 7 + 12 = 20
 
 Note: if there is nothing to sum, the sum is default to 0.
+
+
+
+WTF
+1.
+let sumPosNum = 0;
+function positiveSum(arr) {
+  for (let element of arr) {
+    if (element >=0){
+      sumPosNum += element;
+      return sumPosNum;
+    }
+  }
+}
+
+didn’t work
+
+Works:
+2. function positiveSum(arr) {
+  let sumPosNum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] >= 0){
+      sumPosNum += arr[i];
+    } else {
+      continue;
+    }
+  }
+  return sumPosNum;
+}
+
+doesn't work
+let sumPosNum = 0;
+function positiveSum(arr) {
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] >= 0){
+        sumPosNum += arr[i];
+      } else {
+        continue;
+      }
+    }
+    return sumPosNum;
+  }
+
+Need some help:
+1. https://javascript.info/array#loops  please tell me the difference
+2. check every step
