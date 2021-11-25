@@ -46,6 +46,12 @@ function positiveSum(arr) {
     return sumPosNum;
   }
 
+  
+WTF, nicht verstehen :)
+
+  function positiveSum(arr) {
+    return arr.reduce((a,b)=> a + (b > 0 ? b : 0),0);
+ }
 Need some help:
 1. https://javascript.info/array#loops  please tell me the difference
 2. check every step
